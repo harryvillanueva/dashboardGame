@@ -62,6 +62,55 @@ body {
   border-bottom: 20px solid #37c6a0;
 }
 
+.user-rank {
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .rank-gold { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+    .rank-silver { background: #e2e3e5; color: #383d41; border: 1px solid #d6d8db; }
+    .rank-diamond { background: #cce5ff; color: #004085; border: 1px solid #b8daff; }
+    
+    .status-badge {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    .status-active { background-color: #28a745; }
+    .status-offline { background-color: #6c757d; }
+    .status-banned { background-color: #dc3545; }
+
+    .action-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #8c8c8c;
+      transition: color 0.2s;
+      margin: 0 4px;
+    }
+    .action-btn:hover { color: #1b1b1b; }
+    .action-btn.delete:hover { color: #dc3545; }
+    
+    /* Ajuste de columnas para la tabla de usuarios */
+    .users-table-grid {
+      display: grid;
+      grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
+      padding: 12px 0;
+      align-items: center;
+    }
+
+    /* Colores personalizados para las tarjetas de estado de juego */
+    .bg-valorant { background: linear-gradient(135deg, #ff4655, #bd3944); } /* Rojo Valorant */
+    .bg-fifa { background: linear-gradient(135deg, #28b16d, #1e8753); } /* Verde Fútbol */
+    .bg-generic { background: linear-gradient(135deg, #5c6bc0, #3949ab); } /* Azul Genérico */
+    
+    /* Ajuste para iconos que no son marcas sociales */
+    .social-logo { font-size: 16px; }
+
 /* ================== APP CONTAINER (FULLSCREEN) ================== */
 
 .app {
@@ -103,11 +152,13 @@ body {
   margin-bottom: 40px;
 }
 
-.logo-dot {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  background: var(--red-main-light);
+
+
+.logo-dot img {
+  width: 64px;
+  height: 64px;
+  border-radius: 25px;
+  
 }
 
 .sidebar-section {
@@ -250,11 +301,13 @@ body {
   cursor: pointer;
 }
 
-.avatar-circle {
-  width: 28px;
-  height: 28px;
+
+.avatar-circle img{
+  
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  
 }
 
 /* Metrics row */
