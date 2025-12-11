@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Analytics Dashboard</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos (para el menú lateral) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-RXf+QSDCUQs5uwZQ+U0GMnS68lQ2G0Yp1p5MNDoZCE3EkjQdZsFHUKtCF+5fN7xwFsA7gJTBQv1z6W2vNhbbXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <main class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-dot"></div>
+      </div>
+
+      <div class="sidebar-section sidebar-section--main">
+        <button class="sidebar-item active">
+          <span class="sidebar-icon"><i class="fa-solid fa-gauge-high"></i></span>
+          <span class="sidebar-label">Dashboard</span>
+        </button>
+      </div>
+
+      <div class="sidebar-section">
+        <button class="sidebar-item">
+          <span class="sidebar-icon"><i class="fa-solid fa-user"></i></span>
+         <a href="usuarios.html"> <span class="sidebar-label">Usuarios</span></a>
+        </button>
+
+        <button class="sidebar-item">
+          <span class="sidebar-icon"><i class="fa-regular fa-id-card"></i></span>
+          <span class="sidebar-label">Torneos</span>
+        </button>
+
+        <button class="sidebar-item">
+          <span class="sidebar-icon"><i class="fa-regular fa-image"></i></span>
+          <span class="sidebar-label">Jugadores</span>
+        </button>
+
+
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <section class="dashboard">
+      <!-- Red header area -->
+      <section class="dashboard-header">
+        <nav class="top-nav">
+          <div class="nav-tabs">
+            <button class="nav-tab active">Analytics</button>
+            <button class="nav-tab">Leaderboard</button>
+            <button class="nav-tab">Realtime</button>
+            <button class="nav-tab">Trending</button>
+          </div>
+          <div class="nav-right">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search by Name, URL" />
+            </div>
+            <button class="nav-avatar">
+              <span class="avatar-circle"></span>
+            </button>
+          </div>
+        </nav>
+
+
+      </section>
+
+      <!-- White content area -->
+      <section class="dashboard-body">
+        <div class="social-cards">
+          <!-- YouTube -->
+          <article class="social-card">
+            <header class="social-card-header">
+                <span class="social-logo youtube">
+                  <i class="fa-brands fa-youtube"></i>
+                </span>
+              <span class="social-platform">Jugadores</span>
+              <button class="card-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            </header>
+            <div class="social-main">
+              <div class="social-number">4.2m</div>
+              <div class="social-subtitle">Subscribers count</div>
+            </div>
+          </article>
+
+          <!-- Instagram -->
+          <article class="social-card">
+            <header class="social-card-header">
+                <span class="social-logo instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+              <span class="social-platform">Torneos</span>
+              <button class="card-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            </header>
+            <div class="social-main">
+              <div class="social-number">2.2m</div>
+              <div class="social-subtitle">Followers count</div>
+            </div>
+
+
+          </article>
+
+          <!-- Facebook -->
+          <article class="social-card">
+            <header class="social-card-header">
+                <span class="social-logo facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </span>
+              <span class="social-platform">Juegos</span>
+              <button class="card-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            </header>
+            <div class="social-main">
+              <div class="social-number">1.2m</div>
+              <div class="social-subtitle">Followers count</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tabla / sección inferior simplificada -->
+        <section class="content-section">
+          <header class="content-header">
+            <div class="content-title">Content Updates</div>
+            <div class="content-tabs">
+              <button class="content-tab active">Realtime Data</button>
+              <button class="content-tab">Today</button>
+              <button class="content-tab">Past Month</button>
+              <button class="content-tab">All Time</button>
+            </div>
+          </header>
+
+          <div class="content-table">
+            <div class="table-header">
+              <span>Content Name</span>
+              <span>Platform</span>
+              <span>Views</span>
+              <span>Likes</span>
+              <span>Growth</span>
+            </div>
+            <div class="table-row">
+              <span>Playing at the NBA</span>
+              <span>YouTube</span>
+              <span>12.3M</span>
+              <span>412K</span>
+              <span class="positive">+14.2%</span>
+            </div>
+            <div class="table-row">
+              <span>Behind the scenes</span>
+              <span>Instagram</span>
+              <span>3.1M</span>
+              <span>98K</span>
+              <span class="positive">+7.8%</span>
+            </div>
+            <div class="table-row">
+              <span>Live Q&amp;A</span>
+              <span>Facebook</span>
+              <span>1.4M</span>
+              <span>45K</span>
+              <span class="negative">-2.1%</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>
